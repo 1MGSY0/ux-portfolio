@@ -146,7 +146,7 @@ export const impactPoints = [
 export const learningsProcess = {
   heading: "Learnings & Process",
   intro:
-    "For this project, the tema and I worked from research to ideation, prototyping, and validation with a consistent focus on designing for healthier long-term language learning.",
+    "For this project, the team and I worked from research to ideation, prototyping, and validation with a consistent focus on designing for healthier long-term language learning.",
   takeaways: [
     {
       title: "Aligning ideas with the problem",
