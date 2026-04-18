@@ -1,0 +1,32 @@
+# Root gitignore for the nested Next.js app in `portfolio/`
+
+# dependencies
+portfolio/node_modules/
+
+# Next.js build output
+portfolio/.next/
+portfolio/out/
+
+# production builds
+portfolio/build/
+
+# coverage
+portfolio/coverage/
+
+# env files
+portfolio/.env*
+
+# deployment
+portfolio/.vercel/
+
+# logs
+portfolio/npm-debug.log*
+portfolio/yarn-debug.log*
+portfolio/yarn-error.log*
+portfolio/.pnpm-debug.log*
+
+# misc
+.DS_Store
+*.pem
+portfolio/*.tsbuildinfo
+portfolio/next-env.d.ts

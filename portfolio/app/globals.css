@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fbff;
+  --foreground: #0f172a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-nunito), "Segoe UI", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-display: var(--font-duo-display), var(--font-nunito), "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1000px circle at 12% 10%, rgba(147, 197, 253, 0.26), transparent 34%),
+    radial-gradient(1200px circle at 88% 8%, rgba(196, 181, 253, 0.2), transparent 38%),
+    radial-gradient(900px circle at 50% 100%, rgba(125, 211, 252, 0.12), transparent 40%),
+    linear-gradient(180deg, #eef6ff 0%, #f8fbff 34%, #ffffff 64%, #eff6ff 100%);
+  color: var(--foreground);
+  font-family: var(--font-nunito), "Segoe UI", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  background-attachment: fixed;
+}
+
+.font-display {
+  font-family: var(--font-duo-display), var(--font-nunito), "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(96, 165, 250, 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
